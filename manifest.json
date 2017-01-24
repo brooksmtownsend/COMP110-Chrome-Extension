@@ -2,19 +2,17 @@
   "manifest_version": 2,
 
   "name": "COMP110 Office hours notifications",
-  "description": "This extension shows a popup whenever a student enters the queue.",
+  "description": "Click the 110 button on the queue pages and notifications will appear",
   "version": "1.10",
 
   "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html",
-    "default_title": "COMP110 Notifcations Enabled"
+    "default_icon": "icon.png"
   },
 
-  "permissions": ["contextMenus"],
+  "permissions": ["activeTab"],
 
   "background": {
-    "scripts": ["sample.js"]
+    "scripts": ["background.js"]
   },
 
   "content_scripts": [

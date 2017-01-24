@@ -1,5 +1,3 @@
-console.log("called");
-
 Notification.requestPermission().then(function(result) {
   console.log(result);
 });

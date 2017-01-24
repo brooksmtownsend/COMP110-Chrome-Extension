@@ -13,13 +13,5 @@
 
   "background": {
     "scripts": ["background.js"]
-  },
-
-  "content_scripts": [
-  {
-    "matches": ["http://comp110.com/*"],
-    "run_at": "document_end",
-    "js": ["content.js"]
   }
-]
 }

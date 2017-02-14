@@ -1,5 +1,6 @@
 Notification.requestPermission().then(function(result) {
   console.log(result);
+  window.alert("Notifications Enabled!");
 });
 
 var queue = document.querySelector('.queue')

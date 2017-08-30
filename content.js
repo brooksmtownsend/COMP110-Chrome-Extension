@@ -10,6 +10,8 @@ if (Notification.permission === "granted"){
             icon: 'http://comp110.com/cpresources/userphotos/kris@cs.unc.edu/100/Screen-Shot-2015-12-27-at-11.06.24-AM.png?d=1451835909'
         }
     );
+} else{
+    console.log("Permissions denied for notification, office hours notifications will not work.");
 }
 
 var queue = document.querySelector('.queue')
@@ -22,6 +24,7 @@ try{
         if (callButton != null){
             if (callButton.innerText === "Call") {
                 console.log(target);
+                callButton.innerText = "~Call~";
                 var title = 'A new student has arrived';
                 var noti = new Notification(
                     title, {

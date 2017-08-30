@@ -3,7 +3,7 @@
 
   "name": "COMP110 Office hours notifications",
   "description": "Click the 110 button on the queue pages and notifications will appear",
-  "version": "1.2",
+  "version": "1.21",
 
   "browser_action": {
     "default_icon": "icon.png"
@@ -20,13 +20,5 @@
 
   "background": {
     "scripts": ["background.js"]
-  },
-
-  "content_scripts":[
-    {
-      "matches": ["http://comp110.com/srm/?v=0.0.7#/staff/*"],
-      "js": ["content.js"],
-      "run_at": "document_end"
-    }
-  ]
+  }
 }

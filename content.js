@@ -25,6 +25,7 @@ try{
             if (callButton.innerText === "Call") {
                 console.log(target);
                 callButton.innerText = "~Call~";
+                document.querySelector('button.warning').innerText = "~Cancel~";
                 var title = 'A new student has arrived';
                 var noti = new Notification(
                     title, {

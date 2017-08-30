@@ -9,9 +9,21 @@
     "default_icon": "icon.png"
   },
 
+  "icons": {
+    "74": "icon.png"
+  },
+
   "permissions": ["activeTab"],
 
   "background": {
     "scripts": ["background.js"]
-  }
+  },
+
+  "content_scripts":[
+    {
+      "matches": ["http://comp110.com/srm/?v=0.0.7#/staff/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
 }

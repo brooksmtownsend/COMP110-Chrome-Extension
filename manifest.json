@@ -13,7 +13,10 @@
     "74": "icon.png"
   },
 
-  "permissions": ["activeTab"],
+  "permissions": [
+    "activeTab",
+    "notifications"
+  ],
 
   "background": {
     "scripts": ["background.js"]

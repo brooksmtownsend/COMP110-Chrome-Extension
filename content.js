@@ -7,7 +7,7 @@ if (Notification.permission === "granted"){
     var noti = new Notification(
         title, {
             body: "Office hours woo!",
-            icon: 'http://comp110.com/cpresources/userphotos/kris@cs.unc.edu/100/Screen-Shot-2015-12-27-at-11.06.24-AM.png?d=1451835909'
+            icon: 'https://i.imgur.com/eScsLDw.png'
         }
     );
 } else{
@@ -30,7 +30,7 @@ try{
                 var noti = new Notification(
                     title, {
                         body: target.querySelector(".Staff_Ticket_View .problem span").innerText,
-                        icon: 'http://comp110.com/cpresources/userphotos/kris@cs.unc.edu/100/Screen-Shot-2015-12-27-at-11.06.24-AM.png?d=1451835909'
+                        icon: 'https://i.imgur.com/eScsLDw.png'
                     }
                 );
                 noti.onclick = function(event) {
@@ -45,7 +45,7 @@ try{
     var noti = new Notification(
         title, {
             body: "The queue was not found on the page. Make sure you are on the office hours staff help page and you are checked in to the queue.",
-            icon: 'http://comp110.com/cpresources/userphotos/kris@cs.unc.edu/100/Screen-Shot-2015-12-27-at-11.06.24-AM.png?d=1451835909'
+            icon: 'https://i.imgur.com/eScsLDw.png'
         }
     );
 }
